@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Target Blank</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("button").click(function(){
+		$("a[target='_blank']").hide();
+	});
+});
+	
+</script>
+</head>
+<body>
+
+
+
+<p><a href="https://www.google.com" target="_blank">Click here to go to Google</a></p>
+<p><a href="https://www.amazon.com">Click here to go to Amazon</a></p>
+
+<button>click</button>
+
+</body>
+</html>
