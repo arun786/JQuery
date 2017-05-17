@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Double Click Event Mouse Event</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("button").dblclick(function() {
+			$("p").hide();
+		});
+	});
+</script>
+</head>
+<body>
+
+	<p>This is demo for Mouse Event Double Click</p>
+	<button>Click</button>
+</body>
+</html>
