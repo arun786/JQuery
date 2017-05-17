@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("#div1").fadeTo("slow", 0.15);
+			$("#div2").fadeTo("slow", 0.45);
+			$("#div3").fadeTo("slow", 0.90);
+		});
+	});
+</script>
+</head>
+<body>
+
+	<p>Demo for Fade To</p>
+	<button>Click</button>
+	<p></p>
+	<div id="div1"
+		style="width: 50px; height: 50px; background-color: red;"></div>
+	<div id="div2"
+		style="width: 50px; height: 50px; background-color: green;"></div>
+	<div id="div3"
+		style="width: 50px; height: 50px; background-color: blue;"></div>
+</body>
+</html>
