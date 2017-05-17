@@ -9,7 +9,16 @@
 	$(document).ready(function() {
 		$("p").mouseleave(function() {
 			$("p").css("background-color", "red");
+		}),
+		
+		$("p").mousedown(function(){
+			$("p").css("background-color","yellow");
+		}),
+		
+		$("p").mouseup(function(){
+			$("p").css("background-color","blue");
 		});
+		
 	});
 </script>
 </head>
