@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">F</script>
+<script>
+	$(document).ready(function() {
+		$("#flip").click(function() {
+			$("#panel").slideToggle("slow");
+		});
+	});
+</script>
+<style>
+#panel, #flip {
+	padding: 10px;
+	backgroud-color: grey;
+	border: solid;
+	text-align: center;
+}
+
+#panel {
+	padding: 20px;
+}
+</style>
+
+</head>
+<body>
+
+	<div id="flip">This is div1</div>
+	<div id="panel">This is div2</div>
+	<div id="panel">This is div3</div>
+
+
+</body>
+</html>
