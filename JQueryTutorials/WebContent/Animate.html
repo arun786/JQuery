@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#animated").animate({left:'500px'});
+		});
+	});
+</script>
+<style>
+#animated {
+	background: grey;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+</style>
+</head>
+<body>
+	<button>Click</button>
+	<p>By default all HTMl Elements are static and cannot be moved,
+		inorder to manipulate the position set the CSS Position property to
+		absolute, fixed or relative</p>
+
+	<div id="animated"></div>
+</body>
+</html>
