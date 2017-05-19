@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#b1").click(function(){
+			alert($("#p2").text());
+		});
+		
+		$("#b2").click(function(){
+			alert($("#p2").html());
+		});
+	});
+</script>
+
+</head>
+<body>
+
+	<p id="p1">This is paragraph 1</p>
+	<p id="p2" style="display: none">This is <b>paragraph<b> 2</p>
+	
+	<button id="b1">Click for Text</button>
+	<button id="b2">Click for HTML Version</button>
+</body>
+</html>
