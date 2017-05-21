@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			alert($("#abc").attr("href"));
+		});
+	});
+</script>
+</head>
+<body>
+
+	<p>
+		<a href="https://www.google.com" id="abc">Click to go to Goggle</a>
+	</p>
+
+	<button>Click</button>
+</body>
+</html>
