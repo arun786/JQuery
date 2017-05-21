@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("#b1").click(function() {
+			$("#a1").text("I have read the paragraph..");
+		});
+		
+		$("#b2").click(function(){
+			$("#a2").html("This is <b>HTML</b>...")
+		});
+		
+		$("#b3").click(function(){
+			$("#a3").val("Arun");
+		});
+	});
+</script>
+</head>
+<body>
+
+	<p id="a1">This is a paragraph...</p>
+	<p id="a2">This is second Paragraph....</p>
+	<p>
+		Input Field : <input type="text" id="a3">
+	</p>
+	<button id="b1">Click for Paragraph</button>
+	<button id="b2">Click for Second Paragraph</button>
+	<button id="b3">Click</button>
+</body>
+</html>
