@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#b1").click(function() {
+			$("#a1").text(function(i, origin){
+				return "old Text : " + origin + "new Text : This is new bold and new paragrpah";
+			});
+		});
+		
+		$("#b1").click(function(){
+			$("#a2").html(function(i, original){
+				return "Old HTML : " + original + "new HTML : This is new and <b>bold</b> paragraph";
+			});
+		});
+	});
+</script>
+</head>
+<body>
+
+	<p id="a1">
+		This is a bold paragraph.
+	</p>
+	
+	<p id="a2">
+		This is new Paragraph.
+	</p>
+
+	<button id="b1">Show Old/New Text</button>
+
+</body>
+</html>
