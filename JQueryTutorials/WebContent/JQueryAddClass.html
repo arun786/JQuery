@@ -9,10 +9,16 @@
 	<script>
 	
 	$(document).ready(function(){
-		$("button").click(function(){
+		$("#bt1").click(function(){
 			$("h1, h2, p").addClass("important");
 			$("div").addClass("color");
 		});
+		
+		$("#bt2").click(function(){
+			$("h1, h2, p").removeClass("important");
+			$("div").removeClass("color");
+		});
+		
 	});
 	
 	</script>
@@ -38,6 +44,7 @@
 
 <div>This is div element</div>
 
-<button>Click</button>
+<button id="bt1">Click</button>
+<button id="bt2">Remove</button>
 </body>
 </html>
