@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script>
+	
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("h1, h2, p").addClass("important");
+			$("div").addClass("color");
+		});
+	});
+	
+	</script>
+	
+	<style>
+	.important{
+		font : italic;
+		font-weight: bold;
+		font-size: xx-large;
+	}
+	
+	.color{
+		color: blue;
+	}
+	</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+
+<p>This is Paragraph</p>
+
+<div>This is div element</div>
+
+<button>Click</button>
+</body>
+</html>
