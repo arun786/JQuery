@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script>
+	
+	$(document).ready(function(){
+		$("#bt1").click(function(){
+			$("img").before("<p>This is before the image</p>")
+		});
+		
+		$("#bt2").click(function(){
+			$("img").after("<p>This is after the image</p>")
+		});
+	});
+	
+	</script>
+</head>
+<body>
+
+<img alt="jquery" src="images/pros-and-cons-of-jquery.jpg" width="200" height="150">
+
+<button id="bt1">Insert before</button>
+<button id="bt2">Insert after</button>
+
+</body>
+</html>
