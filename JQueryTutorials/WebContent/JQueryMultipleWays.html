@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+	function AppendFunction() {
+
+		var text1 = "<p>Append Text in HTML way</p>";
+		var text2 = $("<p></p>").text("JQuery way");
+		var text3 = document.createElement("p");
+		text3.innerHTML = "This is DOM way";
+
+		$("body").append(text1, text2, text3);
+
+	}
+</script>
+</head>
+<body>
+
+	<p>This is a paragraph</p>
+
+	<button onclick="AppendFunction()">Click to Append text in
+		various ways</button>
+</body>
+</html>
