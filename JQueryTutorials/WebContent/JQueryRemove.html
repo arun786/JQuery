@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("#bt1").click(function(){
+			$("#div1").remove();
+		});
+	});
+	
+	$(document).ready(function(){
+		$("#bt2").click(function(){
+			$("#div1").empty();
+		});	
+	});
+</script>
+</head>
+<body>
+
+	<div id="div1" style="padding: 0em; background-color: blue; border: 1px; height: 100px;width: 200px;">
+
+		<p>This is div1</p>
+		<p>This functionality is about remove</p>
+
+	</div>
+
+	<button id="bt1">Click to remove div</button>
+	<button id="bt2">Click to empty div</button>
+</body>
+</html>
