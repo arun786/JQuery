@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			alert("backgroud color "+$("p").css("background-color"));
+		});
+	});
+</script>
+</head>
+<body>
+
+	<p style="background-color: #ff0000">This is red background color</p>
+	<p style="background-color: #00ff00">This is red background color</p>
+	<p style="background-color: #0000ff">This is red background color</p>
+	<button>click</button>
+</body>
+</html>
