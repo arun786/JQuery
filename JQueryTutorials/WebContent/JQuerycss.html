@@ -7,8 +7,12 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 	$(document).ready(function() {
-		$("button").click(function() {
+		$("#p1").click(function() {
 			alert("backgroud color "+$("p").css("background-color"));
+		});
+		
+		$("#p2").click(function(){
+			$("p").css("background-color","purple")
 		});
 	});
 </script>
@@ -18,6 +22,7 @@
 	<p style="background-color: #ff0000">This is red background color</p>
 	<p style="background-color: #00ff00">This is red background color</p>
 	<p style="background-color: #0000ff">This is red background color</p>
-	<button>click</button>
+	<button id="p1">click</button>
+	<button id="p2">Click for color change</button>
 </body>
 </html>
