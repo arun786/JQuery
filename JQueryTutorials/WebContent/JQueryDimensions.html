@@ -9,7 +9,8 @@
 		$("button").click(function(){
 			var txt = "";
 			txt += "width of the div : " + $("#div1").width()+"<br>";
-			txt += "inner width of the div : " + $("#div1").innerWidth();
+			txt += "inner width of the div : " + $("#div1").innerWidth() + "<br>";
+			txt += "outer width of the div : " + $("#div1").outerWidth();
 			$("#div1").html(txt);
 		});	
 	});
@@ -22,7 +23,7 @@
 	height: 100px;
 	padding: 10px;
 	background-color: yellow;
-	border: 1px solid;
+	border: 2px solid;
 }
 </style>
 </head>
