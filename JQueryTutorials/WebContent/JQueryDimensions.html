@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			var txt = "";
+			txt += "width of the div : " + $("#div1").width();
+			$("#div1").html(txt);
+		});	
+	});
+
+</script>
+
+<style>
+#div1 {
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	background-color: yellow;
+	border: 1px solid;
+}
+</style>
+</head>
+<body>
+
+<div id="div1">
+</div>
+
+<br>
+
+<button>Click to get the width and the height</button>
+</body>
+</html>
