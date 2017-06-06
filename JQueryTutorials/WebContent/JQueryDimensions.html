@@ -14,6 +14,10 @@
 			txt += "outer width includes margin, padding and border : " + $("#div1").outerWidth(true);
 			$("#div1").html(txt);
 		});	
+		
+		$("#but1").click(function(){
+			$("#div1").width(500).height(200);
+		});
 	});
 
 </script>
@@ -37,5 +41,6 @@
 <br>
 
 <button>Click to get the width and the height</button>
+<button id="but1">Click to resize</button>
 </body>
 </html>
