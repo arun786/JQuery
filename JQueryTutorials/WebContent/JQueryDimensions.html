@@ -10,7 +10,8 @@
 			var txt = "";
 			txt += "width of the div : " + $("#div1").width()+"<br>";
 			txt += "inner width of the div : " + $("#div1").innerWidth() + "<br>";
-			txt += "outer width of the div : " + $("#div1").outerWidth();
+			txt += "outer width of the div : " + $("#div1").outerWidth() + "<br>";
+			txt += "outer width includes margin, padding and border : " + $("#div1").outerWidth(true);
 			$("#div1").html(txt);
 		});	
 	});
@@ -24,6 +25,7 @@
 	padding: 10px;
 	background-color: yellow;
 	border: 2px solid;
+	margin: 3px;
 }
 </style>
 </head>
