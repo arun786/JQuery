@@ -8,7 +8,8 @@
 	$(document).ready(function(){
 		$("button").click(function(){
 			var txt = "";
-			txt += "width of the div : " + $("#div1").width();
+			txt += "width of the div : " + $("#div1").width()+"<br>";
+			txt += "inner width of the div : " + $("#div1").innerWidth();
 			$("#div1").html(txt);
 		});	
 	});
