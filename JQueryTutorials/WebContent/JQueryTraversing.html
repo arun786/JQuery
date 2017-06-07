@@ -14,6 +14,10 @@
 		$("#b2").click(function(){
 			$("span").parents().css({"color" : "purple", "border" : "3px Solid brown"});
 		});
+		
+		$("#b3").click(function(){
+			$("span").parentsUntil("div").css({"color" : "purple", "border" : "3px Solid brown"});
+		});
 	});
 </script>
 </head>
@@ -34,5 +38,6 @@
 	
 	<button id="b1">Click</button>
 	<button id="b2">Click</button>
+	<button id="b3">Click</button>
 </body>
 </html>
