@@ -7,9 +7,13 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 	$(document).ready(function(){
-		$("button").click(function(){
+		$("#b1").click(function(){
 			$("span").parent().css({"color" : "blue","border" : "2px Solid red"});	
 		});		
+		
+		$("#b2").click(function(){
+			$("span").parents().css({"color" : "purple", "border" : "3px Solid brown"});
+		});
 	});
 </script>
 </head>
@@ -28,6 +32,7 @@
 		</div>
 	</div>
 	
-	<button>Click</button>
+	<button id="b1">Click</button>
+	<button id="b2">Click</button>
 </body>
 </html>
