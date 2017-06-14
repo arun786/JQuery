@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="jquery-ui.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("#d1").draggable({
+			helper : "clone"
+		})
+	});
+</script>
+
+
+</head>
+<body>
+
+	<div id="d1" style="border: 1 px solid; background: red">
+		<span> I can be duplicated</span>
+	</div>
+</body>
+</html>
