@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="jquery-ui.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#d1 span").draggable({
+			disabled : true
+		});
+		$("#d2 span").draggable({
+			distance : 20
+		});
+		$("#d3 span").draggable({
+			delay : 500
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="d1" style="border: 1px solid; background: green;">
+		<span>I am not draggable</span>
+	</div>
+
+	<div id="d2" style="border: 1 px thin; background: blue;">
+		<span>Drag me</span>
+	</div>
+	<div id="d3" style="border: 1 px; background: red;">
+		<span> I will be dragged after 500 ms </span>
+	</div>
+</body>
+</html>
